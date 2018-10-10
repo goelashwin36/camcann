@@ -41,10 +41,10 @@ body {
 
 img {
     border-style: none;
-    width: 100%;
     height: auto;
     max-width: 100%;
-    vertical-align: top; 
+    vertical-align: top;
+    horiz-align: center;
 }
 
 a, a:hover, a:focus  {
@@ -326,7 +326,7 @@ h1, h2, h3, h4,
 
 .navbar-default .navbar-nav > li > a {
     padding: 0;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
@@ -1140,16 +1140,14 @@ footer .social-links a i {
 }
 
 #features img{
-    /*float: left;*/
     height: 200px;
-    width: auto;
     /*vertical-align: baseline;*/
 
 }
 #features .img{
     margin-bottom: 25px;
     /*padding-top: 25px;*/
-    background-color: white;
+    /*background-color: white;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
@@ -1164,7 +1162,8 @@ footer .social-links a i {
     font-size: 25px !important;
     text-align: center;
     overflow: hidden;
-    color: #6bb130;
+    color: #fff;
+    /*color: #6bb130;*/
 
 
 }
