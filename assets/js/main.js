@@ -61,13 +61,13 @@
 		$(window).scroll(function(){
 			
 			if ($(window).scrollTop() > 20) {
-				$('nav').removeClass('navbar-trans', 300);
+				$('nav').removeClass('navbar-trans', 500);
 				$('nav').removeClass('navbar-trans-dark');
-				$('nav').addClass('navbar-small', 300);
+				$('nav').addClass('navbar-small', 500);
 			}
 			else {
-				$('nav:not(.mobile-nav)').addClass('navbar-trans', 300);
-				$('nav').removeClass('navbar-small', 300);
+				$('nav:not(.mobile-nav)').addClass('navbar-trans', 500);
+				$('nav').removeClass('navbar-small', 500);
 
 				if ($('nav').hasClass('trans-helper')) {
 					$('nav:not(.mobile-nav)').addClass('navbar-trans-dark');
