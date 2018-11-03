@@ -154,6 +154,16 @@ $(function () {
             $(email).addClass("errorForm");
             error = true;
         }
+
+        var mobile = $('.contact form input[name="mobile"]');
+                if (mobile.val() === "" || mobile.val() === " ") {
+                    $(mobile).addClass("errorForm");
+                    error = true;
+                }
+                else if(isNaN(mobile.val())){
+                    $(mobile).addClass("errorForm");
+                    error = true;
+                }
         
         var msg = $('.contact form textarea');
         
@@ -166,25 +176,33 @@ $(function () {
         if (error === true) {
             return false;
         }
-        
-        var data_string = $('.contact form').serialize();
-        
-    
-        $.ajax({
-            type: "POST",
-            url: $('.contact form').attr('action'),
-            data: data_string,
-            
-            success: function (message) {
-                if (message === 'SENDING') {
-                    $('.msg_success').fadeIn('slow');
-                } else {
-                    $('.msg_error').fadeIn('slow');
+        else {
+            var data = {
+                "name": name.val(),
+                "email": email.val(),
+                "message": msg.val(),
+                "phone": mobile.val()
+            };
+
+            console.log(data);
+            $.ajax({
+                type: "POST",
+                url: "https://camcann.herokuapp.com/camcann/post/submitContactData",
+                data: data,
+
+                success: function (message) {
+                    console.log(message);
+                    if (message.status === 'ok') {
+                        $('.msg_success').fadeIn('slow');
+                    } else {
+                        $('.msg_error').fadeIn('slow');
+                    }
                 }
-            }
-            
-        });
-        
+
+            });
+
+        };
+
         return false;
         
     });

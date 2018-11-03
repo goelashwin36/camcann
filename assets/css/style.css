@@ -1140,7 +1140,7 @@ footer .social-links a i {
 }
 
 #features img{
-    /*height: 200px;*/
+    height: 200px;
     /*vertical-align: baseline;*/
 
 }
@@ -1254,4 +1254,8 @@ footer .social-links a i {
     display: table;
     content: ' ';
     clear: both;
+}
+
+.swiper-slide {
+    padding: 25px !important;
 }
