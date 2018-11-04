@@ -107,11 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 90px;
 }
 
-.sec_title {
-    padding-top: 50px;
-    padding-bottom: 75px;
-    text-align: center;
-}
+
 .black_title{
     padding-top: 50px;
     padding-bottom: 75px;
@@ -132,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .black_title h2 {
-    font-size: 45px;
+    font-size: 1.7em;
     font-weight: 600;
     display: inline-block;
     position: relative;
@@ -159,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .white_title h2 {
-    font-size: 45px;
+    font-size: 1.7em;
     font-weight: 600;
     display: inline-block;
     position: relative;
@@ -519,7 +515,7 @@ h1, h2, h3, h4,
   display: inline-block;
   position: relative;
   text-align: left;
-    font-size: 0.7em;
+    font-size: calc(21px + 1vw) !important;
 }
 
 .cd-words-wrapper b {
