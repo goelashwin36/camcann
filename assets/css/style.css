@@ -319,7 +319,7 @@ h1, h2, h3, h4,
     background-color: #000;
 }
 
-.pageload-overlay.show {
+.overlay.show {
     visibility: visible;
 }
 
